@@ -1,0 +1,70 @@
+.contato{
+    background-image: url('../img/fundo.jpg');
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.contato__fundo-preto{
+    
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+    background-color: var(--preto);
+    opacity: .8;
+    text-align: center;
+}
+
+.contato__secao{
+    
+    margin-bottom: 2rem;
+}
+
+.contato__informacao{
+    color: var(--branco);
+    font-size: 1.3rem;
+}
+
+.contato__whatsapp--imagem{
+    width: 50%;
+    background-color: green;
+    border: .1rem solid green;
+    border-radius: 100%;
+    margin-top: 1rem;
+}
+
+.contato__maps{
+    color: var(--branco);
+    border: 1px solid var(--branco);
+    padding: 1rem;
+    margin-top: 1rem;
+    border-radius: .5rem;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.contato__maps--link{
+    text-decoration: none;
+    color: var(--branco);
+}
+
+@media screen and (min-width: 768px){
+    .contato__informacao{
+        font-size: 1.5rem;
+    }
+
+    .contato__whatsapp--imagem{
+        width: 35%;
+    }
+}
+
+@media screen and (min-width: 1024px){
+    .contato__whatsapp--imagem{
+        width: 20%;
+    }
+
+    .contato__maps{
+        width: 30%;
+        margin: 1rem auto;
+    }
+}

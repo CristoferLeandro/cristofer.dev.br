@@ -1,0 +1,68 @@
+.restaurante__fundo-1{
+    background-image: url('../img/fundo1.jpg');
+}
+
+.restaurante__fundo-2{
+    background-image: url('../img/fundo2.jpg');
+}
+
+.restaurante__fundo{
+    min-height: 22rem;
+
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.restaurante__sobre{
+    background-color: var(--preto);
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    color: var(--branco);
+    text-align: center;
+}
+
+.restaurante__titulo{
+    font-family: var(--fonte-titulo);
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: var(--vermelho);
+}
+
+.restaurante__paragrafo{
+    text-align: justify;
+    font-size: 1.1rem;
+    margin-bottom: .7rem;
+}
+
+span{
+    text-transform: uppercase;
+    color: var(--amarelo-forte);
+    font-size: 1.2rem;
+}
+
+@media screen and (min-width: 768px){
+
+    .restaurante__fundo{
+        min-height: 37rem;
+    }
+
+    .restaurante__titulo{
+        font-size: 3.5rem;
+    }
+
+    .restaurante__paragrafo{
+        font-size: 1.5rem;
+    }
+
+    span{
+        font-size: 1.7rem;
+    }
+}
+
+@media screen and (min-width: 1024px){
+    .restaurante__paragrafo{
+        font-size: 1.4rem;
+    }
+}

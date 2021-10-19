@@ -1,0 +1,84 @@
+.pagina{
+    background-color: var(--azul);
+    text-align: center;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+    
+}
+
+.biografia{
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 1rem;
+    align-items: center;
+}
+
+.pagina__nome{
+    font-family: var(--fonte-titulo);
+    font-size: 3.3rem;
+    color: var(--verde);
+    padding-top: 1rem;
+}
+
+.biografia__stack{
+    text-transform: uppercase;
+    color: var(--cinza);
+    font-size: 1.2rem;
+}
+
+.biografia__descricao{
+    color:var(--cinza);
+    font-size: 1rem;
+    text-align: justify;
+    margin: 1.3rem;
+}
+
+.biografia__sociais{
+    display: inline-block;
+    margin: .5rem .7rem 0 .7rem;
+}
+
+.biografia__foto-perfil{
+    max-width: 300px;
+    border: 1px solid var(--verde);
+    border-radius: 250px;
+}
+
+@media screen and (min-width: 768px) {
+
+    .pagina__nome{
+        font-size: 4.6rem;
+        padding-top: 2.3rem;
+    }
+
+    .biografia__stack{
+        padding-bottom: 2.2rem;
+        font-size: 1.1rem;
+    }
+
+    .biografia__descricao{
+        padding: 0 3rem;
+        font-size: 1.5rem;
+    }
+    
+}
+
+
+
+@media screen and (min-width: 1024px){
+    .pagina{
+
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+
+    .biografia{
+        padding: .5rem;
+    }
+
+    .biografia__descricao{
+        padding: 0;
+        text-align: center;
+    }
+}

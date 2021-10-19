@@ -1,0 +1,46 @@
+.delivery{
+    padding-bottom: 1rem;
+    padding-top: 1rem;
+    background-color: var(--preto);
+    text-align: center;
+}
+
+.delivery__opcoes{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.delivery__links{
+    width: 50%;
+    margin: auto;
+    
+}
+
+.delivery__imagem{
+    width: 100%;
+}
+
+.delivery__links a{
+    text-decoration: none;
+    color: var(--branco);
+    font-size: 1.2rem;
+}
+
+@media screen and (min-width: 768px){
+   
+    .delivery__opcoes{
+        margin-bottom: 2rem;
+        flex-direction: row;
+    }
+
+    .delivery__links{
+        width: 30%;
+    }
+}
+
+@media screen and (min-width: 1024px){
+    .delivery__links{
+        width: 20%;
+    }
+}

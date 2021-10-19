@@ -1,0 +1,61 @@
+@import url('https://fonts.googleapis.com/css2?family=Mulish&family=Rasa&display=swap');
+
+/*
+    font-family: 'Mulish', sans-serif;
+    font-family: 'Rasa', serif;
+*/
+
+:root{
+    --verde: #8dbf21;
+    --azul: #1d2540;
+    --cinza: #d9d9d9;
+    --branco: #fafafa;
+
+    --fonte-principal: 'Mulish', sans-serif;
+    --fonte-titulo: 'Rasa', serif;
+}
+
+html{
+    min-width: 320px;
+}
+
+body{
+    background-color: var(--cinza);
+    font-family: var(--fonte-principal);
+}
+
+.container{
+    padding: .75rem;
+}
+
+.icone-sociais{
+    background-color: var(--cinza);
+    padding: .1rem;
+    border-radius: .5rem;
+}
+
+.botao{
+    display: block;
+    width: 100%;
+    border: 1px solid;
+    text-align: center;
+    padding: 1rem 0;
+    text-decoration: none;
+    margin: .5rem 0;
+    border-radius: .5rem;
+    font-weight: bold;
+}
+
+        @media screen and (min-width:768px){
+            
+        }
+
+
+
+
+        @media screen and (min-width: 1024px) {
+            .container {
+                padding-left: calc((100% - 940px)/2);
+                padding-right: calc((100% - 940px)/2);
+            }
+        }

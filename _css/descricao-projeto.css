@@ -1,0 +1,133 @@
+.descricao-projeto{
+    display: flex;
+    flex-direction: column;
+}
+
+.descricao-projeto__bio{
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.descricao-projeto__bio--logo{
+    margin-bottom: 1rem;
+}
+
+.descricao-projeto__bio--imagem{
+    width: 40%;
+}
+
+.descricao-projeto__bio--legenda{
+    font-family: var(--fonte-titulo);
+    font-size: 2rem;
+}
+
+.descricao-projeto__bio--paragrafo{
+    text-align: justify;
+    font-size: 1.2rem;
+}
+
+.descricao-projeto__bio--link-empresa{
+    text-align: left;
+    margin: .7rem 0;
+    font-weight: bold;
+}
+
+.descricao-projeto__info{
+    background-color: var(--verde);
+    color: var(--cinza);
+    border-radius: .5rem;
+    padding: .75rem;
+}
+
+.descricao-projeto__info--titulo{
+    font-family: var(--fonte-titulo);
+    color: var(--azul);
+    font-size: 1.5rem;
+    text-align: center;
+    font-weight: bold;
+    margin-bottom: .5rem;
+}
+
+.descricao-projeto__info--lista{
+    margin-bottom: .5rem;
+}
+
+.descricao-projeto__info--itens{
+    font-size: 1.1rem;
+    margin: .3rem 0;
+    text-shadow: 0 0 4px var(--azul);
+}
+
+.descricao-projeto__info--itens span{
+    font-weight: bold;
+    padding-right: 1rem;
+}
+
+.descricao-projeto__info--link-projeto{
+    background-color: var(--verde);
+    padding: 1rem;
+    width: 100%;
+    border: .1rem solid var(--azul);
+    border-radius: .5rem;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.descricao-projeto__info--link-projeto a{
+    text-decoration: none;
+    color: var(--azul);
+    font-weight: bold;
+}
+
+@media screen and (min-width: 768px){
+
+    .descricao-projeto__bio--legenda{
+        font-size: 2.5rem;
+    }
+
+    .descricao-projeto__bio--paragrafo{
+        font-size: 1.5rem;
+    }
+
+    .descricao-projeto__info--titulo{
+        font-size: 2rem;
+    }
+
+    .descricao-projeto__info--itens{
+        font-size: 1.5rem;
+    }
+
+    .descricao-projeto__info--link-projeto{
+        font-size: 1.6rem;
+    }
+}
+
+@media screen and (min-width: 1024px){
+    .descricao-projeto{
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }   
+
+    .descricao-projeto__bio{
+        width: 50%;
+        padding: 1rem;
+    }
+
+    .descricao-projeto__info{
+        height: 100%;
+    }
+
+    .descricao-projeto__info--itens{
+        margin: .6rem 0;
+    }
+
+    .descricao-projeto__info--titulo{
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+    }
+
+    .descricao-projeto__info--link-projeto{
+        margin: 1rem 0;
+    }
+}

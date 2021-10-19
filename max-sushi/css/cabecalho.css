@@ -1,0 +1,131 @@
+.cabecalho{
+    display: flex;
+    background-color: var(--preto);
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: .8rem;
+    padding-bottom: .8rem;
+}
+
+.logo{
+    display: none;
+}
+
+button{
+    background-color: transparent;
+    border: none;
+    color: var(--branco);
+    font-size: 2rem;
+}
+
+.menu, .menu__lista{
+    flex-direction: row;
+    transition: .5s all;
+}
+
+.menu__lista{
+    overflow: hidden;
+    height: 0;
+}
+
+.menu__itens{
+    padding: 1rem 0;
+    transition: 1s all;
+}
+
+.menu__links{
+    color: var(--amarelo-fraco);
+    text-decoration: none;
+}
+
+.fazer-pedido{
+    padding: .6rem;
+    max-width: 40%;
+    text-align: center;
+    background-color: var(--vermelho);
+    color: var(--branco);
+    text-decoration: none;
+    border-radius: 50%;
+    border: .1rem solid var(--branco);
+}
+
+
+button:focus ~ul {
+    height: 100%;
+    border-right: .1rem solid var(--amarelo-fraco);
+    padding-right: .5rem;
+}
+
+
+
+@media screen and (min-width: 768px){
+    .cabecalho{
+        padding-top: 1.2rem;
+        padding-bottom: 1.2rem;
+    }
+
+    .menu__links{
+        font-size: 1.7rem;
+    }
+
+    .fazer-pedido{
+        font-size: 1.6rem;
+        padding: 1rem;
+    }
+}
+
+
+@media screen and (min-width: 1024px){
+
+    .cabecalho{
+        
+        width: 100%;
+        z-index: 99;
+        top: 0;
+        box-sizing: border-box;
+        justify-content: space-between;
+        padding-top: .5rem;
+        padding-bottom: .5rem;
+    }
+    
+    .logo{
+        display: block;
+        width: 8rem;
+        margin-bottom: -3rem;
+    }
+    
+    button{
+        display: none;
+    }
+
+    .menu{
+        width: 50%;
+    }
+
+    .menu__lista{
+        overflow: visible;
+        height: 100%;
+        display: flex;
+        width: 100%;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+    }
+
+    .menu__links{
+        font-size: 1.3rem;
+    }
+
+    .menu__links:hover{
+        text-decoration: underline;
+    }
+
+    .fazer-pedido{
+        max-width: 15%;
+        font-size: 1.3rem;
+    }
+
+
+
+}

@@ -1,0 +1,44 @@
+.cardapio{
+    background-image: url('../img/fundo-cardapio.png');
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+    text-align: center;
+}
+
+
+
+.cardapio__imagem{
+    width: 48%;
+    margin-bottom: .2rem;   
+    border: .05rem solid var(--vermelho);
+    border-radius: 2rem;
+}
+
+@media screen and (min-width: 768px){
+    
+    .cardapio__painel-flex{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+    }
+
+    .cardapio__painel-flex a{
+        width: 30%;
+    }
+
+    .cardapio__imagem{
+        width: 100%;
+        margin-bottom: .5rem;
+    }
+}
+
+@media screen and (min-width: 1024px){
+    .cardapio__painel-flex a{
+        width: 18%;
+        transition: .5s all;
+    }
+    .cardapio__painel-flex a:hover{
+        transform: scale(1.2);
+    }
+}
