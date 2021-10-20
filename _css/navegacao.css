@@ -1,15 +1,46 @@
-.logo{
-    display: none;
+.cabecalho{
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-top: .7rem;
+    padding-bottom: .7rem;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.logo a{
+    font-family: var(--fonte-titulo);
+    text-decoration: none;
+    font-size: 1.7rem;
+    font-weight: bold;
+    color: var(--azul);
+}
+
+button{
+    border: none;
+    background-color: transparent;
+    font-size: 1.5rem;
 }
 
 .navegacao{
-    padding: 1rem 0;
+    flex-basis: 100%;
     text-align: center;
+    height: 0;
+    overflow: hidden;
+    transition: .6s all;
+    
 }
 
+button:focus ~.navegacao{
+    height: 6rem;
+    padding: 1rem 0;
+}
+
+
 .navegacao__lista-itens{
-    display: inline-block;
-    margin: 0 .8rem;
+    display: block;
+    margin: 1rem;
 }
 
 .navegacao__lista-itens a{
@@ -20,8 +51,17 @@
 
                 @media screen and (min-width: 768px) {
 
-                    .navegacao{
-                        padding: 1.9rem 0;
+                    .cabecalho{
+                        padding-top: 1.2rem;
+                        padding-bottom: 1.2rem;
+                    }
+
+                    .logo a{
+                        font-size: 2.2rem;
+                    }
+
+                    button{
+                        font-size: 2rem;
                     }
 
                     .navegacao__lista-itens a{
@@ -33,11 +73,10 @@
 
                                 @media screen and (min-width: 1024px) {
 
-                                    header{
-                                        display: flex;
-                                        justify-content: space-between;
-                                        align-items: center;
-                                    }
+                                   .cabecalho{
+                                       padding-top: 0;
+                                       padding-bottom: 0;
+                                   }
 
                                     .logo{
                                         display: flex;
@@ -46,13 +85,35 @@
                                     }
 
                                     .logo a{
-                                        font-size: 2rem;
+                                        font-size: 2.3rem;
                                         text-decoration: none;
                                         color: var(--azul);
                                     }
 
+                                    button{
+                                        display: none;
+                                    }
+
+                                    .navegacao{
+                                        flex-basis: auto;
+                                        overflow: visible;
+                                        height: 100%;
+                                        padding: 1rem 0;
+                                        text-align: center;
+                                        align-items: center;
+                                    }
+                                    
+                                    .navegacao__lista-itens{
+                                        display: inline-block;
+                                        margin: 0 .8rem;
+                                    }
+                                    
                                     .navegacao__lista-itens a{
-                                        font-size: 1.8rem;
+                                        font-size: 1.6rem;                                      color: #000000;
+                                    }
+
+                                    .navegacao__lista-itens a:hover{
+                                        text-decoration: underline;
                                     }
 
                                 }
