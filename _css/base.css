@@ -29,9 +29,7 @@ body{
 }
 
 .icone-sociais{
-    background-color: var(--cinza);
-    padding: .1rem;
-    border-radius: .5rem;
+   width: 1.7rem;
 }
 
 .botao{
