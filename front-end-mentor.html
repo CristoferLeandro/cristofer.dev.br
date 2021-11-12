@@ -4,13 +4,14 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Projetos</title>
-    <link rel="stylesheet" href="./_css/reset.css">
-    <link rel="stylesheet" href="./_css/base.css">
+    <title>Projeto Card Categorias de carros</title>
+    <link rel="stylesheet" type="text/css" href="./_css/reset.css">
+	<link rel="stylesheet" href="./_css/base.css">
     <link rel="stylesheet" href="./_css/navegacao.css">
     <link rel="stylesheet" href="./_css/biografia.css">
-    <link rel="stylesheet" href="./_css/projetos.css">
+    <link rel="stylesheet" href="./_css/descricao-projeto.css">
     <link rel="stylesheet" href="./_css/rodape.css">
+
 </head>
 <body>
     <header class="container cabecalho">
@@ -27,28 +28,36 @@
 
     <main>
         <section class="pagina container">
-            <h2 class="pagina__nome">Projetos</h2>
+            <h2 class="pagina__nome">Card Categorias de Carros</h2>
         </section>
 
-        <section class="container projetos">
-            <h2 class="projetos__titulo">Oque eu já fiz</h2>
-            <div class="container__projetos-flex">
-                <figure class="projetos__itens">
-                    <img src="./max-sushi/img/logo.png" alt="Logotipo do projeto Max Sushi" class="projetos__itens-imagem">
-                    <figcaption class="projetos__itens-texto">Site Max Sushi Delivery</figcaption>
-                    <a href="./max-sushi-delivery.html" class="botao projetos__botao">Ver Projeto</a>
+        <section class="container descricao-projeto">
+            <div class="descricao-projeto__bio">
+                <figure class="descricao-projeto__bio--logo">
+                    <img src="./front-end-mentor-1/images/capa-projeto.jpg" alt="Logo do projeto" class="descricao-projeto__bio--imagem">
+                    <figcaption class="descricao-projeto__bio--legenda">Projeto Card Categorias de Carros</figcaption>
                 </figure>
-
-                <figure class="projetos__itens">
-                    <img src="./front-end-mentor-1/images/capa-projeto.jpg" alt="Logotipo do projeto categorias de carros" class="projetos__itens-imagem">
-                    <figcaption class="projetos__itens-texto">Card Categorias de carros</figcaption>
-                    <a href="./front-end-mentor.html" class="botao projetos__botao">Ver Projeto</a>
-                </figure>
-                
+                <p class="descricao-projeto__bio--paragrafo">O site da Max Sushi Delivery foi desenvolvido sob demanda de acordo com um modelo de layout que a empresa já possuía. Feito inteiramente em <span class=”caps”>html5</span> e <span class=”caps”>css3</span> o projeto traz uma breve apresentação da empresa, os seus canais de venda, opções de cardápios e informações de contato.
+                    O conteúdo foi distribuído de forma interativa e o projeto primário desenvolvido como “mobile first” totalmente responsivo adaptando-se aos diferentes tamanhos de tela.
+                    </p>
+                    
             </div>
-            <a href="#" class="botao projetos__botao-ver-mais">Ver Mais</a>
+            <div class="descricao-projeto__info">
+                <h4 class="descricao-projeto__info--titulo">Informações do Projeto</h4>
+                <ul class="descricao-projeto__info--lista">
+                    <li class="descricao-projeto__info--itens"><span>Cliente:</span>Front End Mentor</li>
+                    <li class="descricao-projeto__info--itens"><span>Data:</span>Novembro de 2021</li>
+                    <li class="descricao-projeto__info--itens"><span>Categoria:</span>Landing Page</li>
+                    <li class="descricao-projeto__info--itens"><span>Tecnologias:</span>html5 e css3</li>
+                </ul>
+                <div class="descricao-projeto__info--link-projeto">
+                    <a href="./front-end-mentor-1/inicio.html">Abrir Projeto</a>
+                </div>
+            </div>
         </section>
+
     </main>
+
 
     <footer class="container rodape">
         <h3 class="rodape__informacoes">Cristofer da Silva - 2021 - Portifólio</h3>

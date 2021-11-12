@@ -104,19 +104,39 @@
 
 @media screen and (min-width: 1024px){
     .descricao-projeto{
-        flex-direction: row;
-        justify-content: space-between;
-        align-items: center;
+        display: grid;
+        grid-template-areas: 
+            "bio"
+            "info";
+        grid-template-columns: 60% auto;
+        grid-template-rows: 225px auto;
     }   
 
     .descricao-projeto__bio{
-        width: 50%;
-        padding: 1rem;
+        grid-area: bio;
+        width: 100%;
+        
+        grid-column: 1 / 1;
+        grid-row: 1 / 3;
     }
 
     .descricao-projeto__info{
-        height: 100%;
+        grid-area: info;
+        grid-column: 2 / 2;
+        grid-row: 2 / 2;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
     }
+
+    .descricao-projeto__bio--imagem{
+        max-width: 225px;
+    }
+
+    .descricao-projeto__bio--paragrafo{
+        padding-right: 1rem;
+    }
+
 
     .descricao-projeto__info--itens{
         margin: .6rem 0;

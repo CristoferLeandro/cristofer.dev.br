@@ -1,0 +1,86 @@
+.categorias{
+    margin: 80px 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.categorias__card{
+    display: grid;
+    padding: 40px;
+    grid-template-areas: 
+        "card-icone"
+        "card-corpo"
+        "card-botao";
+    grid-template-columns: 100%;
+    
+}
+
+.categorias__card--imagem{
+    grid-area: card-icone;
+    
+    margin-bottom: 40px;
+}
+
+.categorias__card--conteudo{
+    display: grid;
+    grid-area: card-corpo;
+    grid-template-areas: 
+        "card-titulo"
+        "card-descricao";
+    grid-template-rows: 70px auto;
+}
+
+.categorias__card--titulo{
+    font-family: var(--fonte-titulo);
+    color: var(--cinza-claro);
+    text-transform: uppercase;
+    font-size: 40px;
+}
+
+.categorias__card--descricao{
+    color: var(--branco-paragrafo);
+    line-height: 1.6rem;
+}
+
+.categorias__card--botao{
+    display: inline-block;
+    margin-top: 40px;
+    background-color: var(--cinza-claro);
+    width: 60%;
+    text-align: center;
+    padding: 1rem 0;
+    border-radius: 50px;
+}
+
+.saiba-mais{
+
+    text-decoration: none;
+}
+
+#botao1{
+    color: var(--laranja);
+}
+
+#botao2{
+    color: var(--ciano-escuro);
+}
+
+#botao3{
+    color: var(--ciano-muito-escuro);
+}
+
+.categorias__card:nth-child(1){
+    background-color: var(--laranja);
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.categorias__card:nth-child(2){
+    background-color: var(--ciano-escuro);
+}
+
+.categorias__card:nth-child(3){
+    background-color: var(--ciano-muito-escuro);
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}

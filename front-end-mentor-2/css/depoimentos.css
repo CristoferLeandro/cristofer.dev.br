@@ -1,0 +1,90 @@
+.depoimentos{
+    padding: 4rem 1.2rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.depoimentos__card{
+    padding: 1.5rem;
+    margin-bottom: 1.2rem;
+    line-height: 1.5;
+    color: var(--azul-acinzentado-claro);
+    border-radius: 7px;
+    display: grid;
+    grid-template-areas: 
+        "aluno"
+        "titulo"
+        "depoimento";
+    grid-template-rows: 50px auto auto;
+}
+
+.depoimentos__card:nth-child(1){
+    background-color: var(--violeta);
+    background-image: url(../images/bg-pattern-quotation.svg);
+    background-repeat: no-repeat;
+    background-position-x: 90%;
+    background-position-y: 0;
+
+}
+
+.depoimentos__card:nth-child(2){
+    background-color: var(--azul-acinzentado-muito-escuro);
+}
+
+.depoimentos__card-branco{
+    background-color: var(--branco);
+    color: var(--azul-acinzentado-muito-escuro);
+}
+
+.depoimentos__card:nth-child(4){
+    background-color: var(--azul-muito-escuro);
+}
+
+.depoimentos__card--aluno{
+    grid-area: aluno;
+    display: grid;
+    grid-template-areas:
+        "foto"
+        "nome"
+        "verificado";
+    grid-template-columns: 45px auto;
+    grid-template-rows: 30% 70%;
+}
+
+.depoimentos__card--foto{
+    grid-area: foto;
+    grid-column: 1 / 1;
+    grid-row: 1 / 2;
+    width: 1.7rem;
+    border: 2px solid var(--azul-acinzentado-claro);
+    border-radius: 100%;
+}
+
+.depoimentos__card-branco .depoimentos__card--foto{
+    border-color: var(--azul-acinzentado-muito-escuro);
+}
+
+.depoimentos__card--nome{
+    grid-area: nome;
+    grid-column: 2 /2;
+    grid-row: 1 / 1;
+}
+
+.verificado{
+    grid-area: verificado;
+    grid-column: 2 / 2;
+    grid-row: 2 / 2;
+    font-size: .7rem;
+    opacity: 0.5;
+}
+
+.titulo{
+    grid-area: titulo;
+    font-size: 1.2rem;
+    margin-bottom: 1.2rem;
+}
+
+.descricao{
+    grid-area: depoimento;
+    opacity: 0.7;
+}

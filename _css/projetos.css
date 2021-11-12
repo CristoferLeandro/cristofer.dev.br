@@ -11,27 +11,35 @@
 }
 
 .projetos__itens{
+    display: grid;
+    grid-template-areas: 
+        "logo"
+        "titulo"
+        "botao";
+    grid-template-rows: 300px auto auto;
     width: 100%;
     box-sizing: border-box;
     background-color: var(--branco);
-    padding: .3rem;
-    margin-bottom: .7rem;
+    padding: .2rem;
     border-radius: .4rem;
+    margin-bottom: .3rem;
 }
 
 .projetos__itens-imagem{
     width: 100%;
     border-radius: .4rem;
-    background-color: var(--cinza);
+    height: 100%;
 }
 
 .projetos__itens-texto{
+    grid-area: titulo;
     padding: .4rem;
     text-align: center;
     font-size: 1.2rem;
 }
 
 .projetos__botao{
+    grid-area: botao;
     color: var(--azul);
     border-color: var(--azul);
 }
@@ -51,7 +59,7 @@
 
             .container__projetos-flex{
                 display: flex;
-                justify-content: space-evenly;
+                justify-content: space-between;
                 flex-wrap: wrap;
             }
             
