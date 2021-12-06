@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="utf-8">
 		<meta name="viewport" content="width=device-width initial-scale=1.0">
@@ -14,16 +14,16 @@
 </head>
 <body>
     <header class="container cabecalho">
-        <h1 class="logo"><a href="./index.html">Cristofer.Dev</a></h1>
-        <button>&#9776;</button>
-        <nav class="navegacao">
-            <ul>
-                <li class="navegacao__lista-itens"><a href="./index.html">Início</a></li>
-                <li class="navegacao__lista-itens"><a href="./projetos.html">Projetos</a></li>
-                <li class="navegacao__lista-itens"><a href="./contato.html">Contato</a></li>
-            </ul>
-        </nav>
-    </header>
+		<h1 class="logo"><a href="./index.html">Cristofer.Dev</a></h1>
+		<button>&#9776;</button>
+		<nav class="navegacao">
+			<ul>
+				<li class="navegacao__lista-itens"><a href="./index.html">Início</a></li>
+				<li class="navegacao__lista-itens"><a href="./projetos.html">Projetos</a></li>
+				<!--<li class="navegacao__lista-itens"><a href="./contato.html">Contato</a></li>-->
+			</ul>
+		</nav>
+	</header>
 
 
     <main>
@@ -32,7 +32,7 @@
         </section>
 
         <section class="container contato">
-            <address>
+            <address class="contato__info">
                 <figure class="contato__informacao">
                     <img src="./_img/placeholder.png" alt="Imagem ícone de área de endereço">
                     <figcaption>Rua General Canabarro, 3131 - Uruguaiana/RS</figcaption>
@@ -51,7 +51,7 @@
                 <input type="text" name="nome" placeholder="Digite o seu nome...">
                 <input type="email" name="email" placeholder="Digite o seu email...">
                 <textarea name="msg" id="msg" cols="30" rows="10" placeholder="Digite sua mensagem aqui..."></textarea>
-                <button type="submit">Enviar mensagem</button>
+                <button type="submit" id="enviar-mensagem">Enviar mensagem</button>
             </form>
         </section>
     </main>

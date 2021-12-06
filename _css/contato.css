@@ -32,12 +32,13 @@
     border-radius: 1rem;
 }
 
-button{
+#enviar-mensagem{
     width: 50%;
     padding: 1rem;
     border-radius: 1rem;
     font-family: var(--fonte-principal);
     font-weight: bold;
+    font-size: 1rem;
     color: var(--cinza);
     background-color: var(--azul);
 }
@@ -45,30 +46,54 @@ button{
             @media screen and (min-width: 768px){
                 .contato{
                     margin: 2rem 0;
-                    display: flex;
-                    justify-content: space-evenly;
+                    display: grid;
+                    grid-template-areas:
+                        "informacoes"
+                        "formulario";
+                    grid-template-columns: repeat(2, 1fr);
+                    grid-template-rows: auto;
+                    gap: 1rem;
+                    box-sizing: border-box;
+                }
+
+                .contato__info{
+                    grid-area: informacoes;
+                    grid-column: 1/1;
+                    grid-row: 1/1;
+                    display: grid;
+                    grid-template-areas: 
+                        "endereco"
+                        "telefone"
+                        "email";
+                    grid-template-columns: 100%;
+                    grid-template-rows: repeat(3, 1fr);
+                    align-items: start;
+                    gap: .5rem;
+                }
+
+                .contato__informacao, .formulario input{
+                    margin: 0;
                 }
 
                 .formulario{
-                    margin-left: 1rem;
+                    margin: 0;
+                    grid-area: formulario;
+                    grid-column: 2/2;
+                    grid-row: 1/1;
+                    display: grid;
+                    grid-template-areas: 
+                        "nome"
+                        "seuemail"
+                        "mensagem";
+                    grid-template-columns: 100%;
+                    grid-template-rows: 1.5fr 1.5fr 6fr 1fr;
+                    gap: .5rem;
                 }
             }
 
 
             @media screen and (min-width: 1024px){
-                
-                .contato{
-                    flex-direction: row;
-                    align-items: center;
-                }
-
-                address, .formulario{
-                    margin: 0;
-                    padding: 0;
-                }
-                .formulario{
-                    margin-left: 1rem;
-                }
+            
                 
                 .contato-espaco{
                     
@@ -76,7 +101,9 @@ button{
                             padding-right: calc((100% - 940px)/2);
                             padding-top: 5rem;
                             padding-bottom: 5rem;
-                        
-                    
+                }
+
+                #enviar-mensagem{
+                    display: block;
                 }
             }

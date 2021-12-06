@@ -82,19 +82,39 @@
 
 @media screen and (min-width: 1024px){
     .pagina{
-
-        display: flex;
-        justify-content: space-evenly;
-        align-items: center;
+        display: grid;
+        grid-template-areas: 
+            "nome"
+            "descricao"
+            "foto";
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: 1fr;
+        gap: .5rem;
+        align-items: stretch;
     }
 
-    .biografia{
-        padding: .5rem;
+    .biografia:nth-child(1){
+        grid-area: nome;
+        grid-column: 1/1;
+        grid-row: 1/1;
+    }
+
+    .biografia:nth-child(2){
+        grid-area: descricao;
+        grid-column: 2/2;
+        grid-row: 1/1;
+    }
+
+    .biografia:nth-child(3){
+        grid-area: foto;
+        grid-column: 3/3;
+        grid-row: 1/1;
     }
 
     .biografia__descricao{
         padding: 0;
-        text-align: center;
+        margin: 0 0 .5rem 0;
+        text-align: justify;
     }
 
     .biografia__sociais:hover{

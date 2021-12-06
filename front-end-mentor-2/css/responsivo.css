@@ -14,8 +14,7 @@
         grid-template-columns: repeat(4, 1fr);
         grid-template-rows: repeat(2, 1fr);
         grid-gap: 1.7rem;
-        margin-top: calc((100vh - 640px) / 2);
-        margin-bottom: calc((100vh - 640px) / 2);
+        margin-top: calc((100vh - 500px - 45px - 11px) / 2);
     }
 
     .depoimentos__card{
