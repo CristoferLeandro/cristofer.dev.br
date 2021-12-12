@@ -31,6 +31,7 @@
     font-size: 1rem;
     text-align: justify;
     margin: 1.3rem;
+    line-height: 1.1;
 }
 
 .biografia ul{
@@ -64,7 +65,7 @@
 
     .biografia__stack{
         padding-bottom: 2.2rem;
-        font-size: 1.1rem;
+        font-size: 1.4rem;
     }
 
     .biografia__descricao{
@@ -87,38 +88,56 @@
             "nome"
             "descricao"
             "foto";
-        grid-template-columns: repeat(3, 1fr);
+        grid-template-columns: repeat(4, 1fr);
         grid-template-rows: 1fr;
         gap: .5rem;
         align-items: stretch;
+    }
+
+    .pagina__nome{
+        padding-top: 0;
     }
 
     .biografia:nth-child(1){
         grid-area: nome;
         grid-column: 1/1;
         grid-row: 1/1;
+        justify-content: space-around;
     }
 
     .biografia:nth-child(2){
         grid-area: descricao;
-        grid-column: 2/2;
+        grid-column: 2/4;
         grid-row: 1/1;
+        justify-content: center;
+        border-left: 1px dashed var(--verde);
+        border-right: 1px dashed var(--verde);
     }
 
     .biografia:nth-child(3){
         grid-area: foto;
-        grid-column: 3/3;
+        grid-column: 4/4;
         grid-row: 1/1;
     }
 
+    .biografia__stack{
+        font-size: 1.3rem;
+    }
+
     .biografia__descricao{
-        padding: 0;
+        padding: 0 .4rem;
         margin: 0 0 .5rem 0;
-        text-align: justify;
+        text-align: center;
+        font-size: 1.2rem;
+        line-height: 1.2;
     }
 
     .biografia__sociais:hover{
         background-color: #fff;
         transform: scale(1.2);
+    }
+
+    .biografia__foto-perfil{
+        max-width: 256px;
     }
 }
